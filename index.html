@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Starglass — Óculos de Sol Premium</title>
+  <meta name="description" content="Starglass: óculos de sol premium com design minimalista e coleções inspiradas em álbuns pop." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Starglass">
+        <span class="brand__mark" aria-hidden="true">★</span>
+        <span class="brand__name">STARG<span class="brand__accent">LASS</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#colecoes">Coleções</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato" class="btn btn--small">Comprar</a>
+      </nav>
+
+      <button class="hamburger" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <a href="#colecoes">Coleções</a>
+      <a href="#destaques">Destaques</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Comprar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="kicker">Luxo minimalista • assinatura em estrela</p>
+          <h1>Óculos que viram <span class="glow">ícone</span>.</h1>
+          <p class="lead">
+            A Starglass nasce para quem quer presença. Design limpo, acabamento premium e coleções
+            inspiradas em eras pop — cada drop é uma história.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#destaques">Ver modelos</a>
+            <a class="btn btn--ghost" href="#colecoes">Explorar coleções</a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trustItem">
+              <strong>UV400</strong><span>proteção total</span>
+            </div>
+            <div class="trustItem">
+              <strong>Acetato</strong><span>premium</span>
+            </div>
+            <div class="trustItem">
+              <strong>Drop</strong><span>limitado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-label="Imagem conceitual da marca">
+          <div class="starCard">
+            <div class="starCard__top">
+              <span class="miniTag">STARG<span>★</span>LASS</span>
+              <span class="miniTag miniTag--right">COLLECTION 01</span>
+            </div>
+            <div class="starCard__mid">
+              <div class="lens"></div>
+              <div class="lens lens--2"></div>
+              <div class="shine"></div>
+            </div>
+            <div class="starCard__bottom">
+              <span>Minimal • Bold • Pop</span>
+              <span class="dot">•</span>
+              <span>Made for the spotlight</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLEÇÕES -->
+    <section class="section" id="colecoes">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Coleções por “álbuns”</h2>
+          <p>Você cria uma era. A gente veste no rosto. Drops inspirados em vibes de verão, noite e palco.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__icon">★</div>
+            <h3>Estate Notturna</h3>
+            <p>Preto intenso, linhas finas, aquele ar de “sou a noite”.</p>
+            <button class="chip" data-filter="noite">Ver peças</button>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">★</div>
+            <h3>Sol d’Oro</h3>
+            <p>Armações claras e lentes quentes. Summer permanente.</p>
+            <button class="chip" data-filter="verao">Ver peças</button>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">★</div>
+            <h3>Pop Manifesto</h3>
+            <p>Design statement: formato marcante e presença absurda.</p>
+            <button class="chip" data-filter="pop">Ver peças</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUES / VITRINE -->
+    <section class="section section--alt" id="destaques">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Destaques</h2>
+          <p>Modelos conceito — você pode trocar nomes, preços e fotos depois.</p>
+        </div>
+
+        <div class="toolbar">
+          <button class="pill is-active" data-show="todos">Todos</button>
+          <button class="pill" data-show="noite">Noite</button>
+          <button class="pill" data-show="verao">Verão</button>
+          <button class="pill" data-show="pop">Pop</button>
+        </div>
+
+        <div class="products" id="products">
+          <article class="product" data-cat="noite">
+            <div class="product__img" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Stella Nero</h3>
+              <p>Armação preta, lentes fumê. Minimal e perigoso.</p>
+              <div class="product__row">
+                <span class="price">R$ 289</span>
+                <a class="btn btn--small" href="#contato">Quero esse</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-cat="verao">
+            <div class="product__img product__img--2" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Golden Hour</h3>
+              <p>Lentes âmbar, vibe pôr do sol. Versátil demais.</p>
+              <div class="product__row">
+                <span class="price">R$ 269</span>
+                <a class="btn btn--small" href="#contato">Quero esse</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-cat="pop">
+            <div class="product__img product__img--3" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Stage Star</h3>
+              <p>Formato statement. Entra na sala e muda o clima.</p>
+              <div class="product__row">
+                <span class="price">R$ 319</span>
+                <a class="btn btn--small" href="#contato">Quero esse</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-cat="noite">
+            <div class="product__img product__img--4" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Midnight Line</h3>
+              <p>Armação fina, elegante, “quiet luxury”.</p>
+              <div class="product__row">
+                <span class="price">R$ 249</span>
+                <a class="btn btn--small" href="#contato">Quero esse</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-cat="verao">
+            <div class="product__img product__img--5" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Dolce Spiaggia</h3>
+              <p>Claro, leve e chique. Praia + cidade.</p>
+              <div class="product__row">
+                <span class="price">R$ 279</span>
+                <a class="btn btn--small" href="#contato">Quero esse</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-cat="pop">
+            <div class="product__img product__img--6" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Iconic Flash</h3>
+              <p>Pra quem ama atenção — e sabe usar.</p>
+              <div class="product__row">
+                <span class="price">R$ 339</span>
+                <a class="btn btn--small" href="#contato">Quero esse</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          <span class="badge">Dica</span>
+          Se você tiver fotos reais dos óculos, eu troco esses “blocos” por imagens e deixo com cara de e-commerce de verdade.
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container about">
+        <div class="about__copy">
+          <h2>A estrela é a assinatura</h2>
+          <p>
+            Starglass é sobre presença. A gente mistura a estética do luxo minimalista com a energia de cultura pop:
+            coleções com narrativa, drops com identidade e uma marca que parece grande desde o primeiro dia.
+          </p>
+          <ul class="bullets">
+            <li><span>★</span> Identidade visual monocromática e forte</li>
+            <li><span>★</span> Linguagem de “coleção / drop” para hype orgânico</li>
+            <li><span>★</span> Pronto pra Instagram + loja (Shopify/Nuvemshop depois)</li>
+          </ul>
+        </div>
+
+        <div class="about__panel">
+          <h3>Depoimentos</h3>
+          <div class="quote">
+            <p>“Coloquei e ficou com cara de caro na hora.”</p><span>— Cliente beta</span>
+          </div>
+          <div class="quote">
+            <p>“A estrela é simples, mas gruda na cabeça.”</p><span>— Amigo sincero</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section section--cta" id="contato">
+      <div class="container cta">
+        <h2>Vamos colocar isso pra vender hoje.</h2>
+        <p>Me chama e eu adapto com seus preços reais, catálogo e links.</p>
+
+        <div class="cta__actions">
+          <a class="btn" href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="btn btn--ghost" href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+
+        <form class="form" onsubmit="return false;">
+          <div class="form__row">
+            <input type="text" placeholder="Seu nome" aria-label="Seu nome" />
+            <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" />
+          </div>
+          <textarea rows="4" placeholder="Me diz: você quer loja agora ou página com catálogo + pedido no WhatsApp?" aria-label="Mensagem"></textarea>
+          <button class="btn" id="fakeSend">Enviar</button>
+          <p class="micro" id="sentMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Starglass</span>
+      <a href="#top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
